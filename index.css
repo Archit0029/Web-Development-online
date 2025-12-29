@@ -1,0 +1,42 @@
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom Scrollbar for editors */
+textarea::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+textarea::-webkit-scrollbar-track {
+    background: #1e1e1e; 
+}
+textarea::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 5px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.code-area {
+    background-color: #252526;
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Courier New', monospace;
+    resize: none;
+    outline: none;
+    border: none;
+    line-height: 1.5;
+}
+
+/* Syntax highlighting colors simulation for plain textareas */
+.html-editor { color: #e4e4e7; }
+.css-editor { color: #a5b4fc; }
+.js-editor { color: #fde047; }
